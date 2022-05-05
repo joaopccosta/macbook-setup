@@ -7,7 +7,13 @@ sed -i config.bak "s/PIHOLE_IP_ADDR/$PIHOLE_IP_ADDR/g; s/PI_USR/$PI_USR/g" ~/.ss
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-casks=( telegram signal blackhole-2ch reaper spectacle discord little-snitch obsidian disk-inventory-x handbrake transmission )
+formulas=( neofetch )
+for formula in "${formulas[@]}"
+do
+    brew install $formula 
+done
+
+casks=( telegram signal blackhole-2ch reaper spectacle discord little-snitch obsidian disk-inventory-x handbrake transmission  )
 for cask in "${casks[@]}"
 do
     brew install --cask $cask 
