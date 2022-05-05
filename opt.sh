@@ -4,6 +4,7 @@ PI_USR=$2
 
 cp files/.ssh/config ~/.ssh/config
 sed -i config.bak "s/PIHOLE_IP_ADDR/$PIHOLE_IP_ADDR/g; s/PI_USR/$PI_USR/g" ~/.ssh/config
+echo "Copied ~/.ssh/config"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

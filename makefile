@@ -11,4 +11,4 @@ core:
 	sh core.sh
 
 opt:
-	sh opt.sh
+	sh opt.sh ${PIHOLE_IP_ADDR} ${PI_USR}
