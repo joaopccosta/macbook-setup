@@ -14,7 +14,7 @@ do
     brew install $formula 
 done
 
-casks=( telegram signal blackhole-2ch reaper spectacle discord little-snitch obsidian disk-inventory-x handbrake transmission  )
+casks=( telegram signal blackhole-2ch reaper spectacle discord little-snitch obsidian disk-inventory-x handbrake transmission pomotodo )
 for cask in "${casks[@]}"
 do
     brew install --cask $cask 
