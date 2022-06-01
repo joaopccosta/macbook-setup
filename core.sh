@@ -1,7 +1,7 @@
 #!/bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-formulas=( terraform rcm awscli pycharm-ce intellij-idea-ce )
+formulas=( terraform rcm awscli pycharm-ce intellij-idea-ce jq )
 for formula in "${formulas[@]}"
 do
     brew install $formula 
