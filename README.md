@@ -4,6 +4,16 @@ Sets up a new macbook with software. I have used this on an M1 Mac without any i
 
 There are two suites that are installed. 
 
+## Pre-requisites
+
+Install `brew`:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/joaopccosta/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 ## Core
 
 Tools which are used for productivity or work related tasks.
@@ -11,6 +21,14 @@ Tools which are used for productivity or work related tasks.
 ## Opt
 
 Tools which are used for my own personal workflows and daily tasks.
+
+## Work
+
+Some tools and configs related to work.
+
+```bash
+make work NPM_TOKEN="my-npm-registry-token"
+```
 
 # Usage
 

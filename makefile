@@ -1,6 +1,7 @@
 USER := "default"
 PIHOLE_IP_ADDR := "192.168.1.84"
 PI_USR := "pi"
+NPM_TOKEN="default"
 
 all: start core opt
 

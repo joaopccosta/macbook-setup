@@ -17,11 +17,8 @@ do
     brew install $formula 
 done
 
-casks=( telegram signal blackhole-2ch reaper spectacle discord little-snitch obsidian disk-inventory-x handbrake transmission pomotodo vlc )
+casks=( telegram signal blackhole-2ch reaper discord little-snitch obsidian handbrake transmission pomotodo vlc )
 for cask in "${casks[@]}"
 do
     brew install --cask $cask 
 done
-
-npm install -g cfn-lint
-echo "[OK] Installed npm packages."

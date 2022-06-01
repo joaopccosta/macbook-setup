@@ -12,6 +12,7 @@ mkdir ~/.nvm
 echo "[OK] Created ~/.nvm."
 
 cat nvmexports >> ~/.exports
+source ~/.exports
 echo "[OK] Appended nvm export statement."
 nvm install $NODE_VERSION
 nvm alias default $NODE_VERSION
@@ -22,8 +23,8 @@ do
     brew install --cask $cask 
 done
 
-cp npmrc ~/.npmrc
-sed -i ~/.npmrc.bak "s/NPMTOKEN/$NPM_TOKEN/g" ~/.npmrc
+cp ./npmrc ~/.npmrc
+sed -i .npmrc.bak "s/NPMTOKEN/$NPM_TOKEN/g" ~/.npmrc
 echo "[OK] Configured npmrc"
 
 npm install -g cfn-lint
