@@ -12,3 +12,6 @@ core:
 
 opt:
 	sh opt.sh ${PIHOLE_IP_ADDR} ${PI_USR}
+
+work:
+	sh work.sh ${NPM_TOKEN}
