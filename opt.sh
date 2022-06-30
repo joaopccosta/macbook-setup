@@ -11,7 +11,7 @@ echo "[OK] Enabled long-press on keys for special characters."
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-formulas=( neofetch )
+formulas=( neofetch ipcalc )
 for formula in "${formulas[@]}"
 do
     brew install $formula 
