@@ -11,13 +11,13 @@ echo "[OK] Enabled long-press on keys for special characters."
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-formulas=( neofetch ipcalc )
+formulas=( neovim neofetch ipcalc arp-scan vale)
 for formula in "${formulas[@]}"
 do
     brew install $formula 
 done
 
-casks=( telegram signal blackhole-2ch reaper discord little-snitch obsidian handbrake transmission pomotodo vlc )
+casks=( telegram signal blackhole-2ch reaper discord little-snitch obsidian handbrake transmission pomotodo vlc texstudio mactex )
 for cask in "${casks[@]}"
 do
     brew install --cask $cask 
