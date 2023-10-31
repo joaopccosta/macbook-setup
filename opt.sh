@@ -17,7 +17,7 @@ do
     brew install $formula 
 done
 
-casks=( telegram signal blackhole-2ch reaper discord little-snitch obsidian handbrake transmission pomotodo vlc texstudio mactex )
+casks=( copyq telegram signal blackhole-2ch reaper discord little-snitch obsidian handbrake transmission pomotodo vlc texstudio mactex )
 for cask in "${casks[@]}"
 do
     brew install --cask $cask 
