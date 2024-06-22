@@ -8,7 +8,7 @@ do
     brew install $formula 
 done
 
-casks=( librewolf iterm2 visual-studio-code zoom slack spectacle disk-inventory-x suspicious-package )
+casks=( librewolf iterm2 visual-studio-code zoom slack spectacle disk-inventory-x suspicious-package iperf3 )
 for cask in "${casks[@]}"
 do
     brew install --cask $cask 
